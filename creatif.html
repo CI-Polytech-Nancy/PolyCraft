@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Polycraft</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link rel="icon" href="img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+</head>
+
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Remonter"><i class="fas fa-arrow-up"></i></button>
+
+	<!-- Barre de navigation -->
+	<div class="topnav" id="myTopnav">
+		<div class="max-width">
+			<a href="#regles">Règles</a>
+			<a href="#serveur">Serveur</a>
+			<a href="#stats">Statistiques</a>
+			<a href="#staff">Staff</a>
+			<a href="http:\\map.polycraft.fr">Dynmap</a>
+			<a href="https://discord.com/invite/AqkD7Bex"><i class="fab fa-discord"></i> Discord</a>
+			<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</div>
+	<!-- Fin de la barre de navigation -->
+
+	<!-- Haut de page -->
+	<header id="accueil" class="parallax">
+		<h1>Le serveur minecraft officiel de Polytech Nancy</h1>
+		<h3>mc.polycraft.fr <button onclick="copy()"><i class="fas fa-copy"></i></button></h3>
+	</header>
+	<!-- Fin du haut de page -->
+
+	<!-- Section des règles -->
+	<section id="regles">
+		<h1>RÈGLES</h1>
+		<hr>
+		<!-- Première rangée -->
+		<div class="row features">
+			<div class="col">
+				<i class="fas fa-shield-alt feature"></i>
+				<h2>Spawn protégé</h2>
+				<p>Vous ne pouvez pas construire ou casser des blocs dans le spawn</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-map-marker-alt feature"></i>
+				<h2>Réserver une zone</h2>
+				<p>Vous pouvez délimiter une zone avec des blocs puis contacter un admin sur Discord</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-puzzle-piece feature"></i>
+				<h2>Serveur vanilla</h2>
+				<p>A l'exception d'optifine, les mods sont interdits (lightmatica par exemple)</p>
+			</div>
+		</div>
+		<!-- Fin de la première rangée -->
+
+		<!-- Deuxième rangée -->
+		<div class="row features">
+			<div class="col">
+				<i class="fas fa-server feature"></i>
+				<h2>Machines à lag</h2>
+				<p>Évitez les constructions qui font lag le serveur (beaucoup d'entitées, ...)</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-bomb feature"></i>
+				<h2>Pas de grief</h2>
+				<p>Détruire ou obstruer les constructions des autres est strictement interdit</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-comment-dots feature"></i>
+				<h2>Respect mutuel</h2>
+				<p>Pas d'insultes, de haine, de spam ou d'abus dans le chat</p>
+			</div>
+		</div>
+		<!-- Fin de la deuxième rangée -->
+	</section>
+	<!-- Fin de la section des règles -->
+
+	<!-- Première bannière -->
+	<section id="banner" class="parallax">
+		<h1>Qu'est ce que vous attendez ?</h1>
+		<h2>Rejoignez nous sur minecraft sur <i>mc.polycraft.fr</i> <button onclick="copy()"><i
+					class="fas fa-copy"></i></button></h2>
+	</section>
+	<!-- Fin de la première bannière -->
+
+	<!-- Section serveur -->
+	<section id="serveur">
+		<h1>Notre serveur</h1>
+		<hr>
+		<div class="row fixed-width">
+			<div class="col-md mode">
+				<p align="justify">Notre serveur créatif est ouvert à tous et a pour but de permettre aux incroyables
+					futurs ingénieurs de notre belle école d'exprimer leur créativité. En effet c'est un monde plat sur
+					lequel vous pouvez réserver un espace qui vous sera dédié pour laisser libre cours a votre talent de
+					constructeur. Vous pouvez également nous proposer vos plus beaux systèmes redstone pour montrer à
+					Mr. Rivière que vous êtes fort en circuits.<br /><br>
+					En plus de ça, le CI vous prépare un concours pour les vacances de Noël, divisé en deux catégories
+					:<br /><br />
+					- Spawn : pour ce premier concours nous vous demandons de construire un edifice digne d'un spawn de
+					qualité,
+					le gagant de ce concours verra son spawn choisit pour être celui du serveur survie !<br />
+					- Build libre : dans cette categorie vous avez le droit de faire ce que vous voulez du moment que
+					c'est interessant, aussi bien du point de vue artistique que du point de vue ingénieux (build
+					stylé, circuit redstone, aventure RP, parcours, etc ... )<br /><br />
+					Le concours en lui meme sera un stream sur la chaine du CI juste avant Noël pendant les vacances</p>
+			</div>
+		</div>
+	</section>
+	<!-- Fin de la section serveur -->
+
+	<!-- Section statistiques -->
+	<section id="stats">
+		<h1>Statistiques</h1>
+		<hr>
+		<div class="row features">
+			{% if plugins %}
+			<div class="col">
+				<i class="fas fa-users feature"></i>
+				<h2>Joueurs connectés</h2>
+				{% if players[0] %}
+				<p>{{ players[1] }}</p><br />
+				{% else %}
+				<p>Aucun joueur</p><br />
+				{% endif %}
+			</div>
+			<div class="col">
+				<i class="fas fa-clock feature"></i>
+				<h2>Version</h2>
+				<p>{{ version }}</p>
+			</div>
+			<div class="col">
+				<i class="fas fa-plug feature"></i>
+				<h2>Plugins</h2>
+				<p>{{ plugins }}</p>
+			</div>
+			{% else %}
+			<div class="col">
+				<i class="fas fa-power-off feature"></i>
+				<p>Le serveur n'est pas en ligne</p>
+			</div>
+			{% endif %}
+		</div>
+	</section>
+	<!-- Fin de la section statistiques -->
+
+	<!-- Deuxième bannière -->
+	<section id="banner2" class="parallax">
+		<h1>Besoin d'aide ?</h1>
+		<h2>Contactez nous sur <i><a href="mailto:#">ci.polytech.nancy@gmail.com</a></i></h2>
+	</section>
+	<!-- Fin de la deuxième bannière -->
+
+	<!-- Section staff -->
+	<section id="staff">
+		<h1>LE STAFF</h1>
+		<hr>
+		<div class="row stafflist">
+			<!-- Premier membre -->
+			<div class="col-md staffblock">
+				<img width="100px;" src={{ skins[0] }}>
+				<h2 href=''>{{ names[0] }}</h2>
+				<p>Propriétaire</p>
+			</div>
+			<!-- Fin du premier membre -->
+
+			<!-- Deuxième membre -->
+			<div class="col-md staffblock">
+				<img width="100px;" src={{ skins[1] }}>
+				<h2>{{ names[1] }}</h2>
+				<p>Co-propriétaire</p>
+			</div>
+			<!-- Fin du deuxième membre -->
+
+			<!-- Troisième membre -->
+			<div class="col-md staffblock">
+				<img width="100px;" src={{ skins[2] }}>
+				<h2>{{ names[2] }}</h2>
+				<p>Admin</p>
+			</div>
+			<!-- Fin du troisième membre -->
+		</div>
+	</section>
+	<!-- Fin de la section staff -->
+
+	<!-- Bas de page -->
+	<footer>
+		<div class="footer">
+			<div class="copyright-notice">
+				<p>mc.polycraft.fr &copy; Tous droits réservés</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Fin du bas de page -->
+
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("a").on('click', function (event) {
+
+				if (this.hash !== "") {
+					event.preventDefault();
+
+					var hash = this.hash;
+
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 100, function () {
+
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+	<script>
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+
+		function copy() {
+			navigator.clipboard.writeText("mc.polycraft.fr");
+		}
+	</script>
+</body>
+
+</html>
