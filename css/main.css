@@ -1,5 +1,5 @@
 @-ms-viewport{
-    width:device-width
+    width: device-width;
 }
 
 html{
@@ -68,10 +68,8 @@ a:hover {
     background-color: #3498db;
     color: black;
     cursor: pointer;
-    padding: 15px;
-    padding-right: 19px;
-    padding-left: 19px;
-    font-size: 18px;
+	padding: 15px 19px;
+	font-size: 18px;
     transition: all .2s ease-in;
 }
 
@@ -84,7 +82,7 @@ a:hover {
 .topnav {
 	list-style-type: none;
     overflow: hidden;
-    box-shadow: 0px 6px 13px -7px rgba(0,0,0,0.20);
+    box-shadow: 0 6px 13px -7px rgba(0,0,0,0.20);
     transition: all .2s ease-in;
     font-weight: 700;
     text-transform: uppercase;
@@ -147,9 +145,9 @@ a:hover {
 /* End Navbar */
 
 #accueil {
-	background-image: url("https://pbs.twimg.com/media/Ew2NiSQWYAAgTUT?format=jpg&name=4096x4096");
+	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F6352721.jpg&f=1&nofb=1");
 	margin: 0;
-	padding: 222px 0px 222px 0px;
+	padding: 222px 0 222px 0;
 	text-align: center;
 	color: white;
 }
@@ -220,7 +218,7 @@ a:hover {
 
 #banner {
 	background-image: url("https://i.imgur.com/XL2PAd3.png");
-	padding: 75px 0px 75px 0px;
+	padding: 75px 0 75px 0;
 	text-align: center;
 }
 
@@ -261,7 +259,7 @@ a:hover {
 
 #banner2 {
 	background-image: url("https://i.imgur.com/MljFIMA.png");
-	padding: 75px 0px 75px 0px;
+	padding: 75px 0 75px 0;
 	text-align: center;
 }
 
@@ -353,6 +351,11 @@ a:hover {
 	font-size: 20px;
 }
 
+#staffA {
+	color: white;
+	cursor: default;
+}
+
 #staff p {
 	margin: 3px 0 20px 0;
 	font-size: 18px;
@@ -385,7 +388,7 @@ a:hover {
 
 @media screen and (max-width: 799px) {
 	#serveur .img, #mentions .img {
-		padding: 50px 0px 50px 0px;
+		padding: 50px 0 50px 0;
 	}
 }
 
@@ -410,7 +413,6 @@ footer {
 .copyright-notice {
 	text-align: center;
 	margin: 0;
-	margin-bottom: 0px;
 	padding: 0;
 	transition: all .2s ease-in;
 	cursor: default;
