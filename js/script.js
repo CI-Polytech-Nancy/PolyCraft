@@ -43,7 +43,8 @@ function setStaffSkins() {
 setStaffSkins()
 
 function openTab() {
-    window.open("https://polytech-services-nancy.fr/", '_blank');
-    let views = Number(localStorage.getItem("clicked")) + 1;
-    localStorage.setItem("clicked", String(views));
+    let count = Number(localStorage.getItem("clicked")) + 1;
+    localStorage.setItem("clicked", String(count));
+
+    alert("Reviens plus tard pour aller plus loins (09/09/2022)");
 }
