@@ -1,7 +1,3 @@
-@-ms-viewport{
-    width: device-width;
-}
-
 html{
     box-sizing:border-box;
     -ms-overflow-style:scrollbar;
@@ -351,9 +347,9 @@ a:hover {
 	font-size: 20px;
 }
 
-#staffA {
-	color: white;
-	cursor: default;
+#staff button {
+	background-color: transparent;
+	border: none;
 }
 
 #staff p {
