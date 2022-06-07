@@ -46,5 +46,5 @@ function openTab() {
     let count = Number(localStorage.getItem("clicked")) + 1;
     localStorage.setItem("clicked", String(count));
 
-    alert("Reviens plus tard pour aller plus loins (09/09/2022)");
+    alert("Reviens plus tard pour aller plus loins (09/06/2022)");
 }
