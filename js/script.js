@@ -30,5 +30,6 @@ function copy() {
 
 // Ouvrir un onglet avec le site de PSN
 function openTab() {
+    alert("Sympa le nouveau site de PSN, surtout les photos");
     window.open("https://polytech-services-nancy.fr/", "_blank");
 }
