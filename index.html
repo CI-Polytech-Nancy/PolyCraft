@@ -1,207 +1,143 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-    <title>Polycraft</title>
+  <title>Polycraft</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="PolyCraft" />
-    <meta property="og:description" content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18." />
-    <meta property="og:url" content="https://mc.polycraft.fr/" />
-    <meta property="og:image" content="https://i.imgur.com/IblZaXz.png" />
-    <meta content="#D22B2B" data-react-helmet="true" name="theme-color" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="PolyCraft"/>
+  <meta property="og:description"
+        content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18."/>
+  <meta property="og:url" content="https://mc.polycraft.fr/"/>
+  <meta property="og:image" content="/static/img/logo.png"/>
+  <meta content="#D22B2B" data-react-helmet="true" name="theme-color"/>
 
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css">
+  <link rel="icon" href="static/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
-
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Remonter"><i class="fas fa-arrow-up"></i></button>
+<div class="fixed topnav">
+  <a href="#rules">Règles</a>
+  <a href="#description">Serveur</a>
+  <a href="#staff">Staff</a>
+  <a href="https://discord.com/invite/AqkD7Bex"><i class="fab fa-discord"></i> Discord</a>
+</div>
 
-    <!-- Barre de navigation -->
-    <div class="topnav" id="myTopnav">
-        <div class="max-width">
-            <a href="#regles">Règles</a>
-            <a href="#serveur">Serveur</a>
-            <a href="#staff">Staff</a>
-            <a href="https://discord.com/invite/AqkD7Bex"><i class="fab fa-discord"></i> Discord</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+<div class="header parallax">
+  <h1>Le serveur Minecraft officiel de Polytech Nancy</h1>
+  <p>mc.polycraft.fr
+    <button class="copyBtn" onclick="copyId()"><i class="fas fa-copy"></i></button>
+  </p>
+</div>
+
+<section id="rules">
+  <h2>Règles</h2>
+
+  <div class="container">
+    <div class="grid">
+      <div class="col">
+        <i class="fas fa-shield-alt icon"></i>
+        <h3>Pas de triche</h3>
+        <p>Le x-ray, la duplication ou autres exploits sont interdits</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <h3>Factions</h3>
+        <p>Vous pouvez créer des factions pour protéger votre zone ou jouer à plusieurs</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-puzzle-piece icon"></i>
+        <h3>Serveur vanilla</h3>
+        <p>A l'exception des mods de qualité de vie, les mods sont interdits</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-server icon"></i>
+        <h3>Machines à lag</h3>
+        <p>Évitez les constructions qui font trop lag le serveur (beaucoup d'entitées, ...)</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-bomb icon"></i>
+        <h3>Pas de grief</h3>
+        <p>Détruire ou obstruer les constructions des autres est strictement interdit</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-comment-dots icon"></i>
+        <h3>Respect mutuel</h3>
+        <p>Pas d'insultes, de haine, de spam ou d'abus dans le chat</p>
+      </div>
     </div>
-    <!-- Fin de la barre de navigation -->
+  </div>
+</section>
 
-    <!-- Haut de page -->
-    <header id="accueil" class="parallax">
-        <h1>Le serveur minecraft officiel de Polytech Nancy</h1>
-        <h3>mc.polycraft.fr <button onclick="copy()"><i class="fas fa-copy"></i></button></h3>
-    </header>
-    <!-- Fin du haut de page -->
+<div class="banner parallax" style="background-image: url('/static/img/bg2.png')">
+  <h2>Qu'est-ce que vous attendez ?</h2>
+  <p>Rejoingnez nous sur <i>mc.polycrafr.fr</i>
+    <button class="copyBtn" onclick="copyId()"><i class="fas fa-copy"></i></button>
+  </p>
+</div>
 
-    <!-- Section des règles -->
-    <section id="regles">
-        <h1>RÈGLES</h1>
-        <hr>
-        <!-- Première rangée -->
-        <div class="row features">
-            <div class="col">
-                <i class="fas fa-shield-alt feature"></i>
-                <h2>Pas de triche</h2>
-                <p>Le x-ray, la duplication ou autres exploits sont interdits</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-map-marker-alt feature"></i>
-                <h2>Factions</h2>
-                <p>Vous pouvez créer des factions pour protéger votre zone ou jouer à plusieurs</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-puzzle-piece feature"></i>
-                <h2>Serveur vanilla</h2>
-                <p>A l'exception des mods de qualité de vie, les mods sont interdits</p>
-            </div>
-        </div>
-        <!-- Fin de la première rangée -->
+<section id="description">
+  <h2>Notre serveur</h2>
 
-        <!-- Deuxième rangée -->
-        <div class="row features">
-            <div class="col">
-                <i class="fas fa-server feature"></i>
-                <h2>Machines à lag</h2>
-                <p>Évitez les constructions qui font trop lag le serveur (beaucoup d'entitées, ...)</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-bomb feature"></i>
-                <h2>Pas de grief</h2>
-                <p>Détruire ou obstruer les constructions des autres est strictement interdit</p>
-            </div>
-            <div class="col">
-                <i class="fas fa-comment-dots feature"></i>
-                <h2>Respect mutuel</h2>
-                <p>Pas d'insultes, de haine, de spam ou d'abus dans le chat</p>
-            </div>
-        </div>
-        <!-- Fin de la deuxième rangée -->
-    </section>
-    <!-- Fin de la section des règles -->
+  <div class="container">
+    <p>Notre serveur survie est ouvert à toutes et à tous. Il a pour but de permettre à nos
+      incroyables futurs ingénieurs de s'amuser entre eux, de passer du bon temps. A tous ceux qui veulent
+      try-hard, découvrir le jeu ou venir occasionnellement, ce serveur est fait pour vous !<br><br>
+      Des évènements auront règulièrement lieu pour faire vivre le serveur, restez attentif aux annonces
+      sur notre Discord pour savoir quand ils auront lieu.<br>
+      Enfin, le serveur utilise un système de factions. Vous pouvez réserver une zone libre et y donner
+      accès à qui vous voulez. Ce système a été adopté pour éviter les problèmes de vol ou de grief, et
+      permet d'avoir un vrai sentiment d'intégration au serveur.
+    </p>
+  </div>
+</section>
 
-    <!-- Première bannière -->
-    <section id="banner" class="parallax">
-        <h1>Qu'est ce que vous attendez ?</h1>
-        <h2>
-            Rejoignez nous sur <i>mc.polycraft.fr</i> <button onclick="copy()"><i class="fas fa-copy"></i></button><br>
-            <a id="compteur"></a>
-        </h2>
-    </section>
-    <!-- Fin de la première bannière -->
+<div class="banner parallax" style="background-image: url('/static/img/bg3.png')">
+  <h2>Besoin d'aide ?</h2>
+  <p>Contactez nous sur <i><a href="mailto:#">ci.polytech.nancy@gmail.com</a></i></p>
+</div>
 
-    <!-- Section serveur -->
-    <section id="serveur">
-        <h1>Notre serveur</h1>
-        <hr>
-        <div class="row fixed-width">
-            <div class="col-md mode">
-                <p>Notre serveur survie est ouvert à toutes et à tous. Il a pour but de permettre à nos
-                    incroyables futurs ingénieurs de s'amuser entre eux, de passer du bon temps. A tous ceux qui veulent
-                    try-hard, découvrir le jeu ou venir occasionnellement, ce serveur est fait pour vous !<br><br>
-                    Des évènements auront règulièrement lieu pour faire vivre le serveur, restez attentif aux annonces
-                    sur notre Discord pour savoir quand ils auront lieu.<br>
-                    Enfin, le serveur utilise un système de factions. Vous pouvez réserver une zone libre et y donner
-                    accès à qui vous voulez. Ce système a été adopté pour éviter les problèmes de vol ou de grief, et
-                    permet d'avoir un vrai sentiment d'intégration au serveur.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Fin de la section serveur -->
+<section id="staff">
+  <h2>Le Staff</h2>
 
-    <!-- Deuxième bannière -->
-    <section id="banner2" class="parallax">
-        <h1>Besoin d'aide ?</h1>
-        <h2>Contactez nous sur <i><a href="mailto:#">ci.polytech.nancy@gmail.com</a></i></h2>
-    </section>
-    <!-- Fin de la deuxième bannière -->
+  <div class="container">
+    <div class="grid">
+      <div class="col">
+        <img alt="staff1" src="/static/img/quatorze.png">
+        <h3>Quatorze#0290</h3>
+        <p>Admin</p>
+      </div>
 
-    <!-- Section staff -->
-    <section id="staff">
-        <h1>LE STAFF</h1>
-        <hr>
-        <div class="row stafflist">
-            <!-- Premier membre -->
-            <div class="col-md staffblock">
-                <img width="100px;" id="staff1" alt="staff1" src="https://crafatar.com/avatars/8406c95d235f4aa98be7798ad7ca9e37">
-                <h2>Quatorze#0290</h2>
-                <p>Admin</p>
-            </div>
-            <!-- Fin du premier membre -->
+      <div class="col">
+        <img alt="staff2" src="/static/img/kingounours.png">
+        <h3>momosaurus#5894</h3>
+        <p>Admin</p>
+      </div>
 
-            <!-- Deuxième membre -->
-            <div class="col-md staffblock">
-                <img width="100px;" id="staff2" alt="staff2" src="https://crafatar.com/avatars/2f756bae16fe412c8f74baf0907dc25d">
-                <h2>momosaurus#5894</h2>
-                <p>Co-propriétaire</p>
-            </div>
-            <!-- Fin du deuxième membre -->
+      <div class="col">
+        <img alt="staff3" src="/static/img/mrspaar.png">
+        <h3>MrSpaar#9229</h3>
+        <p>Propriétaire</p>
+      </div>
 
-            <!-- Troisième membre -->
-            <div class="col-md staffblock">
-                <img width="100px;" id="staff3" alt="staff3" src="https://crafatar.com/avatars/335d6b831f2d4f19a280f329a928c692">
-                <h2 href=''>MrSpaar#9229</h2>
-                <p>Propriétaire</p>
-            </div>
-            <!-- Fin du troisième membre -->
+      <div class="col">
+        <img alt="staff4" src="/static/img/otariesupreme.png">
+        <h3>OtarieSupreme#5153</h3>
+        <p>Admin</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <!-- Quatrième membre -->
-            <div class="col-md staffblock">
-                <button onclick="openTab()">
-                    <img width="100px;" id="staff4" alt="staff4" src="https://crafatar.com/avatars/b29e19ca633e3ea4bfe1d9208a95178d">
-                </button>
-                <h2>Claralcool 🥂#4748</h2>
-                <p>Présidente</p>
-            </div>
-            <!-- Fin du quatrième membre -->
+<button onclick="topFunction()" class="fixed" id="topBtn" title="Remonter"><i class="fas fa-arrow-up"></i></button>
 
-            <!-- Cinquième membre -->
-            <div class="col-md staffblock">
-                <img width="100px;" id="staff5"  alt="staff5" src="https://crafatar.com/avatars/406054323fbe4e49bc54f7fb0ae3c818">
-                <h2>Toxicsed#9417</h2>
-                <p>Co-propriétaire</p>
-            </div>
-            <!-- Fin du cinquième membre -->
+<footer>
+  <a id="copyright" href="https://mc.polycraft.fr/mentions-legales">mc.polycraft.fr &copy; Tous droits réservés</a>
+</footer>
 
-            <!-- Sixième membre -->
-            <div class="col-md staffblock">
-                <img width="100px;" id="staff6"  alt="staff6" src="https://crafatar.com/avatars/5a48464a23763e9fb1e8c8dde6d9fd3f">
-                <h2>OtarieSupreme#5153</h2>
-                <p>Admin</p>
-            </div>
-            <!-- Fin du sixième membre -->
-        </div>
-    </section>
-    <!-- Fin de la section staff -->
-
-    <!-- Bas de page -->
-    <footer>
-        <div class="footer">
-            <div class="copyright-notice">
-                <a href="https://mc.polycraft.fr/mentions-legales">mc.polycraft.fr &copy; Tous droits réservés</a>
-            </div>
-        </div>
-    </footer>
-    <!-- Fin du bas de page -->
-
-    <script src="js/script.js"></script>
-    <script>window.onscroll = function () {scrollFunction()}</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+<script src="static/script.js"></script>
+<script src="https://kit.fontawesome.com/c133775852.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
