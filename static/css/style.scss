@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+$small-space: 1.5vh;
+$big-space: 6vh;
+$grid-space: 2.5vh;
+$container-space: 10vw;
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: 'PT Sans', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -97,7 +102,7 @@ button {
 
   a {
     color: black;
-    font-size: 18px;
+    font-size: 1.25rem;
     padding: 0 1.25vw;
   }
 
@@ -108,8 +113,19 @@ button {
   color: white;
   padding: 50px 0;
 
+  div {
+    padding: 0 $container-space;
+  }
+
   h2 {
-    margin-bottom: 1%;
+    margin-bottom: $small-space;
+  }
+
+  a {
+    font-size: 2rem;
+    &:not(:last-child){
+      margin-right: 1.5vw;
+    }
   }
 }
 
@@ -128,23 +144,23 @@ button {
   background-image: url("/static/img/bg1.png");
 
   h1 {
-    font-size: 55px;
+    font-size: 3rem;
   }
 
   p {
-    font-size: 30px;
+    font-size: 2rem;
   }
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 10% 3% 10%;
+  padding: 0 $container-space $big-space $container-space;
   max-width: 1280px;
 }
 
 section h2 {
-  font-size: 35px;
-  margin: 4% 0;
+  font-size: 2rem;
+  margin: $big-space 0;
 
   &::after {
     content: '';
@@ -152,7 +168,7 @@ section h2 {
     position: absolute;
     width: 30vw;
     height: 1px;
-    margin-top: 0.75%;
+    margin-top: $small-space;
     left: calc(50% - 15vw);
     background-color: black;
   }
@@ -163,20 +179,20 @@ section h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5%;
-  margin: -1.5%;
+  margin: -$grid-space;
 
   .col {
-    margin: 1.5%;
+    margin: $grid-space;
   }
 }
 
 #rules {
   .icon {
-    font-size: 60px;
+    font-size: 3.5rem;
   }
 
   h3 {
-    margin: 2% 0;
+    margin: $small-space 0;
   }
 
   .col {
@@ -211,10 +227,10 @@ footer {
   }
 
   h2 {
-    margin: 4% 0 1% 0;
+    margin: $big-space 0 $small-space 0;
   }
 
   p {
-    margin-top: 4%;
+    margin-top: $big-space;
   }
 }

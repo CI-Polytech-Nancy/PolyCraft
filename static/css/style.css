@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -89,7 +89,7 @@ button:active {
 }
 .topnav a {
   color: black;
-  font-size: 18px;
+  font-size: 1.25rem;
   padding: 0 1.25vw;
 }
 @media (min-width: 600px) {
@@ -102,8 +102,17 @@ button:active {
   color: white;
   padding: 50px 0;
 }
+.banner div {
+  padding: 0 10vw;
+}
 .banner h2 {
-  margin-bottom: 1%;
+  margin-bottom: 1.5vh;
+}
+.banner a {
+  font-size: 2rem;
+}
+.banner a:not(:last-child) {
+  margin-right: 1.5vw;
 }
 
 .parallax {
@@ -121,21 +130,21 @@ button:active {
   background-image: url("/static/img/bg1.png");
 }
 .header h1 {
-  font-size: 55px;
+  font-size: 3rem;
 }
 .header p {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 10% 3% 10%;
+  padding: 0 10vw 6vh 10vw;
   max-width: 1280px;
 }
 
 section h2 {
-  font-size: 35px;
-  margin: 4% 0;
+  font-size: 2rem;
+  margin: 6vh 0;
 }
 section h2::after {
   content: "";
@@ -143,7 +152,7 @@ section h2::after {
   position: absolute;
   width: 30vw;
   height: 1px;
-  margin-top: 0.75%;
+  margin-top: 1.5vh;
   left: calc(50% - 15vw);
   background-color: black;
 }
@@ -153,17 +162,17 @@ section h2::after {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5%;
-  margin: -1.5%;
+  margin: -2.5vh;
 }
 .grid .col {
-  margin: 1.5%;
+  margin: 2.5vh;
 }
 
 #rules .icon {
-  font-size: 60px;
+  font-size: 3.5rem;
 }
 #rules h3 {
-  margin: 2% 0;
+  margin: 1.5vh 0;
 }
 #rules .col {
   width: 300px;
@@ -190,10 +199,10 @@ footer {
   color: black;
 }
 .mentions h2 {
-  margin: 4% 0 1% 0;
+  margin: 6vh 0 1.5vh 0;
 }
 .mentions p {
-  margin-top: 4%;
+  margin-top: 6vh;
 }
 
 /*# sourceMappingURL=style.css.map */
