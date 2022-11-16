@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato");
 html {
   scroll-behavior: smooth;
 }
@@ -22,6 +20,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 body::-webkit-scrollbar-thumb {
   background: #3498db;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -203,6 +202,4 @@ footer {
 }
 .mentions p {
   margin-top: 6vh;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
