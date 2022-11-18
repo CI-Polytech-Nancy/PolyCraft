@@ -126,7 +126,7 @@ button:active {
   color: white;
   padding: 222px 0 222px 0;
   text-transform: uppercase;
-  background-image: url("/static/img/bg1.png");
+  background-image: url("/static/img/bg1.webp");
 }
 .header h1 {
   font-size: 3rem;
