@@ -1,0 +1,78 @@
+:root, :host {
+    --fa-style-family-brands: 'Font Awesome 6 Brands';
+    --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
+    --fa-style-family-classic: 'Font Awesome 6 Free';
+    --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+  }
+  
+  @font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("/static/fonts/fa-solid-900.woff2") format("woff2");
+  }
+  
+  @font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("/static/fonts/fa-brands-400.woff2") format("woff2");
+  }
+  
+  .fab,
+  .fa-brands {
+    font-weight: 400;
+    font-family: 'Font Awesome 6 Brands';
+  }
+  
+  .fa-instagram:before {
+    content: "\f16d";
+  }
+  
+  .fa-facebook:before {
+    content: "\f09a";
+  }
+  
+  .fa-discord:before {
+    content: "\f392";
+  }
+  
+  .fas,
+  .fa-solid {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+  }
+  
+  .fa-shield-alt::before {
+    content: "\f3ed";
+  }
+  
+  .fa-map-marker::before {
+    content: "\f3c5";
+  }
+  
+  .fa-puzzle-piece::before {
+    content: "\f12e";
+  }
+  
+  .fa-server::before {
+    content: "\f233";
+  }
+  
+  .fa-bomb::before {
+    content: "\f1e2";
+  }
+  
+  .fa-comment-dots::before {
+    content: "\f4ad";
+  }
+  
+  .fa-copy::before {
+    content: "\f0c5";
+  }
+  
+  .fa-arrow-up::before {
+    content: "\f062";
+  }
