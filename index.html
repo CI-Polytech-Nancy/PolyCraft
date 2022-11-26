@@ -9,21 +9,21 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="PolyCraft" />
-  <meta property="og:description"
-        content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18." />
+  <meta property="og:description" content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18." />
   <meta property="og:url" content="https://mc.polycraft.fr/" />
   <meta property="og:image" content="/static/img/logo.webp" />
   <meta content="#D22B2B" data-react-helmet="true" name="theme-color" />
 
-  <link rel="preload" href="/static/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/static/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/fa-solid-900.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/fa-brands-400.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/PTSans400.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/PTSans400Ext.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/PTSans700.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="/static/fonts/PTSans700Ext.woff2" crossorigin />
+
   <link rel="preload" as="style" type="text/css" href="/static/css/style.css" onload="this.onload=null;this.rel='stylesheet';" />
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Lato:400&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Lato:400&display=swap" />
-
-  <link rel="icon" href="static/img/favicon.webp" />
+  <link rel="icon" type="image/webp" href="static/img/favicon.webp" />
 </head>
 <body>
 <div class="fixed topnav">
@@ -33,7 +33,7 @@
   <a href="https://discord.com/invite/AqkD7Bex"><span class="fab fa-discord"></span> Discord</a>
 </div>
 
-<div class="header parallax">
+<div class="header parallax" style="background-image: url('/static/img/bg1.webp');">
   <h1>Le serveur Minecraft officiel de Polytech Nancy</h1>
   <p>mc.polycraft.fr
     <button class="copyBtn" onclick="copyId()" title="Copier l'IP"><span class="fas fa-copy"></span></button>

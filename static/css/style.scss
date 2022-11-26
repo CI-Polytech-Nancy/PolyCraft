@@ -138,7 +138,6 @@ button {
   color: white;
   padding: 222px 0 222px 0;
   text-transform: uppercase;
-  background-image: url("/static/img/bg1.webp");
 
   h1 {
     font-size: 3rem;
@@ -232,11 +231,40 @@ footer {
   }
 }
 
-:root, :host {
-  --fa-style-family-brands: 'Font Awesome 6 Brands';
-  --fa-font-brands: normal 400 1em/1 'Font Awesome 6 Brands';
-  --fa-style-family-classic: 'Font Awesome 6 Free';
-  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/PTSans400Ext.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/static/fonts/PTSans400.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/PTSans700Ext.woff2") format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/static/fonts/PTSans700.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -255,58 +283,25 @@ footer {
   src: url("/static/fonts/fa-brands-400.woff2") format("woff2");
 }
 
-.fab,
-.fa-brands {
+.fab, .fa-brands {
   font-weight: 400;
   font-family: 'Font Awesome 6 Brands';
 }
 
-.fa-instagram:before {
-  content: "\f16d";
-}
+.fa-instagram:before {content: "\f16d"}
+.fa-facebook:before {content: "\f09a"}
+.fa-discord:before {content: "\f392"}
 
-.fa-facebook:before {
-  content: "\f09a";
-}
-
-.fa-discord:before {
-  content: "\f392";
-}
-
-.fas,
-.fa-solid {
+.fas, .fa-solid {
   font-family: 'Font Awesome 6 Free';
   font-weight: 900;
 }
 
-.fa-shield-alt::before {
-  content: "\f3ed";
-}
-
-.fa-map-marker::before {
-  content: "\f3c5";
-}
-
-.fa-puzzle-piece::before {
-  content: "\f12e";
-}
-
-.fa-server::before {
-  content: "\f233";
-}
-
-.fa-bomb::before {
-  content: "\f1e2";
-}
-
-.fa-comment-dots::before {
-  content: "\f4ad";
-}
-
-.fa-copy::before {
-  content: "\f0c5";
-}
-
-.fa-arrow-up::before {
-  content: "\f062";
-}
+.fa-shield-alt::before {content: "\f3ed"}
+.fa-map-marker::before {content: "\f3c5"}
+.fa-puzzle-piece::before {content: "\f12e"}
+.fa-server::before {content: "\f233"}
+.fa-bomb::before {content: "\f1e2"}
+.fa-comment-dots::before {content: "\f4ad"}
+.fa-copy::before {content: "\f0c5"}
+.fa-arrow-up::before {content: "\f062"}
