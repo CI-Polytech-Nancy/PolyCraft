@@ -8,7 +8,7 @@ window.onscroll = function () {
 }
 
 // Retourner en haut de la page
-function topFunction() {
+function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
