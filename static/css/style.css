@@ -193,14 +193,26 @@ footer {
   background-color: #192a56;
 }
 
-.mentions a {
+#mentions a {
   color: black;
 }
-.mentions h2 {
+#mentions h2 {
   margin: 6vh 0 1.5vh 0;
 }
-.mentions p {
+#mentions p {
   margin-top: 6vh;
+}
+
+#error {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+#error + footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @font-face {

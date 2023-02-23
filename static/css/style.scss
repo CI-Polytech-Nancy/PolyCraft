@@ -89,6 +89,7 @@ button {
   color: #2980b9;
 }
 
+
 .topnav {
   top: 0;
   width: 100%;
@@ -126,6 +127,7 @@ button {
   }
 }
 
+
 .parallax {
   height: 100%;
   background-attachment: fixed;
@@ -133,6 +135,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .header {
   color: white;
@@ -147,6 +150,7 @@ button {
     font-size: 2rem;
   }
 }
+
 
 .container {
   margin: 0 auto;
@@ -182,6 +186,7 @@ section h2 {
   }
 }
 
+
 #rules {
   .icon {
     font-size: 3.5rem;
@@ -195,6 +200,7 @@ section h2 {
     width: 300px;
   }
 }
+
 
 #staff {
   .col {
@@ -211,13 +217,15 @@ section h2 {
   }
 }
 
+
 footer {
   padding: 25px 0;
   text-align: center;
   background-color: #192a56;
 }
 
-.mentions {
+
+#mentions {
   a {
     color: black;
   }
@@ -230,6 +238,22 @@ footer {
     margin-top: $big-space;
   }
 }
+
+
+#error {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-45%, -50%);
+  transform: translate(-45%, -50%);
+
+  & + footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
 
 @font-face {
   font-family: 'PT Sans';
