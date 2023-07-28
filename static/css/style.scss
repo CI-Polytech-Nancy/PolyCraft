@@ -5,10 +5,10 @@ $container-space: 10vw;
 
 html {
   scroll-behavior: smooth;
+  font-family: 'PT Sans', sans-serif;
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
@@ -23,12 +23,12 @@ body {
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #2980b9;
+    background-color: #2980b9;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #3498db;
-    transition: all .2s;
+    background-color: #3498db;
+    transition: background-color .2s;
   }
 }
 
@@ -78,7 +78,7 @@ button {
   padding: 15px 19px;
   border-radius: 5%;
   background-color: #3498db;
-  transition: all .1s ease-in;
+  transition: background-color .1s ease-in;
 
   &:hover {
     background-color: #2980b9;
@@ -204,7 +204,7 @@ section h2 {
 
 #staff {
   .col {
-    transition: all .1s ease-in;
+    transition: transform .1s ease-in;
     width: 200px;
 
     &:hover {
