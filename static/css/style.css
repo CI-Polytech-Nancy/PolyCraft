@@ -1,9 +1,6 @@
-html {
+body {
   scroll-behavior: smooth;
   font-family: "PT Sans", sans-serif;
-}
-
-body {
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
@@ -20,7 +17,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #3498db;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -61,27 +57,9 @@ button:active {
   filter: saturate(150%);
 }
 
-#topBtn {
-  opacity: 0;
-  bottom: 20px;
-  right: 30px;
-  padding: 15px 19px;
-  border-radius: 5%;
-  background-color: #3498db;
-  transition: background-color 0.1s ease-in;
-}
-#topBtn:hover {
-  background-color: #2980b9;
-}
-
-.copyBtn:hover {
-  color: #2980b9;
-}
-
 .topnav {
   top: 0;
   width: 100%;
-  display: none;
   background-color: white;
   padding: 12px 0;
   box-shadow: 0 6px 13px -7px rgba(0, 0, 0, 0.2);
@@ -112,6 +90,10 @@ button:active {
 }
 .banner a:not(:last-child) {
   margin-right: 1.5vw;
+}
+
+.copyBtn:hover {
+  color: #2980b9;
 }
 
 .parallax {
@@ -187,12 +169,6 @@ section h2::after {
   text-transform: initial;
 }
 
-footer {
-  padding: 25px 0;
-  text-align: center;
-  background-color: #192a56;
-}
-
 #mentions a {
   color: black;
 }
@@ -207,12 +183,32 @@ footer {
   position: absolute;
   top: 45%;
   left: 50%;
+  -ms-transform: translate(-45%, -50%);
   transform: translate(-45%, -50%);
 }
 #error + footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+#topBtn {
+  opacity: 0;
+  bottom: 20px;
+  right: 30px;
+  padding: 15px 19px;
+  border-radius: 5%;
+  background-color: #3498db;
+  transition: background-color 0.1s ease-in;
+}
+#topBtn:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #192a56;
 }
 
 @font-face {
@@ -263,7 +259,7 @@ footer {
 }
 .fab, .fa-brands {
   font-weight: 400;
-  font-family: "Font Awesome 6 Brands";
+  font-family: "Font Awesome 6 Brands", sans-serif;
 }
 
 .fa-instagram:before {
@@ -279,7 +275,7 @@ footer {
 }
 
 .fas, .fa-solid {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free", sans-serif;
   font-weight: 900;
 }
 
@@ -313,4 +309,6 @@ footer {
 
 .fa-arrow-up::before {
   content: "\f062";
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

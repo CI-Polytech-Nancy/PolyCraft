@@ -3,12 +3,11 @@ $big-space: 6vh;
 $grid-space: 2.5vh;
 $container-space: 10vw;
 
-html {
-  scroll-behavior: smooth;
-  font-family: 'PT Sans', sans-serif;
-}
 
 body {
+  scroll-behavior: smooth;
+  font-family: 'PT Sans', sans-serif;
+
   font-size: 1.25rem;
   margin: 0;
   padding: 0;
@@ -31,6 +30,7 @@ body {
     transition: background-color .2s;
   }
 }
+
 
 h1, h2, h3, p, .topnav {
   margin: 0;
@@ -71,29 +71,10 @@ button {
   }
 }
 
-#topBtn {
-  opacity: 0;
-  bottom: 20px;
-  right: 30px;
-  padding: 15px 19px;
-  border-radius: 5%;
-  background-color: #3498db;
-  transition: background-color .1s ease-in;
-
-  &:hover {
-    background-color: #2980b9;
-  }
-}
-
-.copyBtn:hover {
-  color: #2980b9;
-}
-
 
 .topnav {
   top: 0;
   width: 100%;
-  display: none;
   background-color: white;
   padding: 12px 0;
   box-shadow: 0 6px 13px -7px rgba(0, 0, 0, 0.20);
@@ -127,6 +108,9 @@ button {
   }
 }
 
+.copyBtn:hover {
+  color: #2980b9;
+}
 
 .parallax {
   height: 100%;
@@ -135,7 +119,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .header {
   color: white;
@@ -218,13 +201,6 @@ section h2 {
 }
 
 
-footer {
-  padding: 25px 0;
-  text-align: center;
-  background-color: #192a56;
-}
-
-
 #mentions {
   a {
     color: black;
@@ -252,6 +228,28 @@ footer {
     bottom: 0;
     width: 100%;
   }
+}
+
+
+#topBtn {
+  opacity: 0;
+  bottom: 20px;
+  right: 30px;
+  padding: 15px 19px;
+  border-radius: 5%;
+  background-color: #3498db;
+  transition: background-color .1s ease-in;
+
+  &:hover {
+    background-color: #2980b9;
+  }
+}
+
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background-color: #192a56;
 }
 
 
@@ -309,7 +307,7 @@ footer {
 
 .fab, .fa-brands {
   font-weight: 400;
-  font-family: 'Font Awesome 6 Brands';
+  font-family: 'Font Awesome 6 Brands', sans-serif;
 }
 
 .fa-instagram:before {content: "\f16d"}
@@ -317,7 +315,7 @@ footer {
 .fa-discord:before {content: "\f392"}
 
 .fas, .fa-solid {
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'Font Awesome 6 Free', sans-serif;
   font-weight: 900;
 }
 
