@@ -75,17 +75,16 @@ button {
 .topnav {
   top: 0;
   width: 100%;
-  background-color: white;
   padding: 12px 0;
+  background-color: white;
   box-shadow: 0 6px 13px -7px rgba(0, 0, 0, 0.20);
 
   a {
     color: black;
     font-size: 1.25rem;
     padding: 0 1.25vw;
+    display: inline-block;
   }
-
-  @media (min-width: 600px) {display: inherit;}
 }
 
 .banner {

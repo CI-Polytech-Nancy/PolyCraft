@@ -17,6 +17,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 body::-webkit-scrollbar-thumb {
   background-color: #3498db;
+  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
@@ -60,19 +61,15 @@ button:active {
 .topnav {
   top: 0;
   width: 100%;
-  background-color: white;
   padding: 12px 0;
+  background-color: white;
   box-shadow: 0 6px 13px -7px rgba(0, 0, 0, 0.2);
 }
 .topnav a {
   color: black;
   font-size: 1.25rem;
   padding: 0 1.25vw;
-}
-@media (min-width: 600px) {
-  .topnav {
-    display: inherit;
-  }
+  display: inline-block;
 }
 
 .banner {
@@ -183,7 +180,6 @@ section h2::after {
   position: absolute;
   top: 45%;
   left: 50%;
-  -ms-transform: translate(-45%, -50%);
   transform: translate(-45%, -50%);
 }
 #error + footer {
@@ -309,6 +305,4 @@ footer {
 
 .fa-arrow-up::before {
   content: "\f062";
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
