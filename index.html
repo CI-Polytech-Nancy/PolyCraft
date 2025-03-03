@@ -1,149 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Polycraft</title>
+    <head>
+        <title>Polycraft</title>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18.">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Le serveur officiel de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18."
+        />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="PolyCraft" />
-  <meta property="og:description" content="Le serveur Minecraft de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18." />
-  <meta property="og:url" content="https://mc.ci-polytech-nancy.fr/" />
-  <meta property="og:image" content="https://mc.ci-polytech-nancy.fr/static/img/logo.webp" />
-  <meta content="#D22B2B" data-react-helmet="true" name="theme-color" />
-  
-  <link rel="stylesheet" href="static/style.css" />
-  <link rel="icon" type="image/webp" href="static/img/favicon.webp" />
-</head>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="PolyCraft" />
+        <meta
+            property="og:description"
+            content="Le serveur Minecraft de Polytech Nancy ! Un monde survie vanilla ouvert à tous les étudiants de l'école qui souhaitent découvrir la 1.18."
+        />
+        <meta property="og:url" content="https://mc.ci-polytech-nancy.fr/" />
+        <meta
+            property="og:image"
+            content="https://mc.ci-polytech-nancy.fr/static/img/logo.webp"
+        />
+        <meta content="#D22B2B" data-react-helmet="true" name="theme-color" />
 
-<body>
-  <div class="fixed topnav">
-    <a href="#rules">Règles</a>
-    <a href="#description">Serveur</a>
-    <a href="#staff">Staff</a>
-    <a href="https://discord.com/invite/PMNFaNG" target="_blank"><span class="fab fa-discord"></span> Discord</a>
-  </div>
+        <link rel="stylesheet" href="static/style.css" />
+        <link rel="icon" type="image/webp" href="static/img/favicon.webp" />
+    </head>
 
-  <div class="header parallax" style="background-image: url('static/img/bg1.webp');">
-    <h1>Le serveur Minecraft de Polytech Nancy</h1>
-    <p>Edition 2021/2022 - mc.polycraft.fr
-      <button class="copyBtn" onclick="copyId()" title="Copier l'IP"><span class="fas fa-copy"></span></button>
-    </p>
-  </div>
-
-  <section id="rules">
-    <h2>Règles</h2>
-
-    <div class="container">
-      <div class="grid">
-        <div class="col">
-          <span class="fas fa-shield-alt icon"></span>
-          <h3>Pas de triche</h3>
-          <p>Le x-ray, la duplication ou autres exploits sont interdits</p>
-        </div>
-        <div class="col">
-          <span class="fa-solid fa-location-dot icon"></span>
-          <h3>Factions</h3>
-          <p>Vous pouvez créer des factions pour protéger votre zone ou jouer à plusieurs</p>
-        </div>
-        <div class="col">
-          <span class="fas fa-puzzle-piece icon"></span>
-          <h3>Serveur vanilla</h3>
-          <p>A l'exception des mods de qualité de vie, les mods sont interdits</p>
-        </div>
-        <div class="col">
-          <span class="fas fa-server icon"></span>
-          <h3>Machines à lag</h3>
-          <p>Évitez les constructions qui font trop lag le serveur (beaucoup d'entitées, ...)</p>
-        </div>
-        <div class="col">
-          <span class="fas fa-bomb icon"></span>
-          <h3>Pas de grief</h3>
-          <p>Détruire ou obstruer les constructions des autres est strictement interdit</p>
-        </div>
-        <div class="col">
-          <span class="fas fa-comment-dots icon"></span>
-          <h3>Respect mutuel</h3>
-          <p>Pas d'insultes, de haine, de spam ou d'abus dans le chat</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="banner parallax" style="background-image: url('static/img/bg2.webp')">
-    <div>
-      <h2>Qu'est-ce que vous attendez ?</h2>
-      <p>Rejoingnez nous sur <i>mc.polycrafr.fr</i>
-        <button class="copyBtn" onclick="copyId()" title="Copier l'IP"><span class="fas fa-copy"></span></button>
-      </p>
-    </div>
-  </div>
-
-  <section id="description">
-    <h2>Notre serveur</h2>
-
-    <div class="container">
-      <p>Notre serveur survie est ouvert à toutes et à tous. Il a pour but de permettre à nos
-        incroyables futurs ingénieurs de s'amuser entre eux, de passer du bon temps. A tous ceux qui veulent
-        try-hard, découvrir le jeu ou venir occasionnellement, ce serveur est fait pour vous !<br><br>
-        Des évènements auront règulièrement lieu pour faire vivre le serveur, restez attentif aux annonces
-        sur notre Discord pour savoir quand ils auront lieu.<br>
-        Enfin, le serveur utilise un système de factions. Vous pouvez réserver une zone libre et y donner
-        accès à qui vous voulez. Ce système a été adopté pour éviter les problèmes de vol ou de grief, et
-        permet d'avoir un vrai sentiment d'intégration au serveur.
-      </p>
-    </div>
-  </section>
-
-  <div class="banner parallax" style="background-image: url('static/img/bg3.webp')">
-    <div>
-      <h2>Besoin d'aide ?</h2>
-      <a href="https://www.discord.gg/PMNFaNG" target="_blank" aria-label="Notre Discord"><span class="fab fa-discord"></span></a>
-      <a href="https://www.instagram.com/club_info_polytech_nancy/" target="_blank" aria-label="Notre Instagram"><span class="fab fa-instagram"></span></a>
-      <a href="https://www.facebook.com/ClubInfoPolytechNancy" target="_blank" aria-label="Notre Facebook"><span class="fab fa-facebook"></span></a>
-    </div>
-  </div>
-
-  <section id="staff">
-    <h2>Le Staff</h2>
-
-    <div class="container">
-      <div class="grid">
-        <div class="col">
-          <img alt="Skin Quatorze" src="static/img/quatorze.png"  height="100" width="100" loading="lazy" />
-          <h3>Quatorze#0290</h3>
-          <p>Admin</p>
+    <body>
+        <div
+            class="header parallax"
+            style="background-image: url(&quot;static/img/bg1.webp&quot;)"
+        >
+            <div>
+                <h1>Le serveur de Polytech Nancy</h1>
+                <p>
+                    2021/2022 - mc.polycraft.fr
+                    <button
+                        class="copyBtn"
+                        onclick="copyId()"
+                        title="Copier l'IP"
+                    >
+                        <span class="fas fa-copy"></span>
+                    </button>
+                </p>
+            </div>
         </div>
 
-        <div class="col">
-          <img alt="Skin Kingounours" src="static/img/kingounours.png"  height="100" width="100" loading="lazy" />
-          <h3>momosaurus#5894</h3>
-          <p>Admin</p>
+        <section id="rules">
+            <h2>Les Règles</h2>
+
+            <div class="container">
+                <div class="grid">
+                    <div class="col">
+                        <span class="fas fa-shield-alt icon"></span>
+                        <h3>Pas de triche</h3>
+                        <p>
+                            Le x-ray, la duplication ou autres exploits sont
+                            interdits
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span class="fa-solid fa-location-dot icon"></span>
+                        <h3>Factions</h3>
+                        <p>
+                            Vous pouvez créer des factions pour protéger votre
+                            zone ou jouer à plusieurs
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span class="fas fa-puzzle-piece icon"></span>
+                        <h3>Serveur vanilla</h3>
+                        <p>
+                            A l'exception des mods de qualité de vie, les mods
+                            sont interdits
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span class="fas fa-server icon"></span>
+                        <h3>Machines à lag</h3>
+                        <p>
+                            Évitez les constructions qui font trop lag le
+                            serveur (beaucoup d'entitées, ...)
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span class="fas fa-bomb icon"></span>
+                        <h3>Pas de grief</h3>
+                        <p>
+                            Détruire ou obstruer les constructions des autres
+                            est strictement interdit
+                        </p>
+                    </div>
+                    <div class="col">
+                        <span class="fas fa-comment-dots icon"></span>
+                        <h3>Respect mutuel</h3>
+                        <p>
+                            Pas d'insultes, de haine, de spam ou d'abus dans le
+                            chat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div
+            class="banner parallax"
+            style="background-image: url(&quot;static/img/bg2.webp&quot;)"
+        >
+            <div>
+                <h2>Qu'est-ce que vous attendez ?</h2>
+                <p>
+                    Rejoingnez nous sur <i>mc.polycrafr.fr</i>
+                    <button
+                        class="copyBtn"
+                        onclick="copyId()"
+                        title="Copier l'IP"
+                    >
+                        <span class="fas fa-copy"></span>
+                    </button>
+                </p>
+            </div>
         </div>
 
-        <div class="col">
-          <img alt="Skin MrSpaar" src="static/img/mrspaar.png"  height="100" width="100" loading="lazy" />
-          <h3>MrSpaar#9229</h3>
-          <p>Propriétaire</p>
+        <section id="description">
+            <h2>Notre Serveur</h2>
+
+            <div class="container">
+                <p>
+                    Notre serveur survie est ouvert à toutes et à tous. Il a
+                    pour but de permettre à nos incroyables futurs ingénieurs de
+                    s'amuser entre eux, de passer du bon temps. A tous ceux qui
+                    veulent try-hard, découvrir le jeu ou venir
+                    occasionnellement, ce serveur est fait pour vous !<br /><br />
+                    Des évènements auront règulièrement lieu pour faire vivre le
+                    serveur, restez attentif aux annonces sur notre Discord pour
+                    savoir quand ils auront lieu.<br />
+                    Enfin, le serveur utilise un système de factions. Vous
+                    pouvez réserver une zone libre et y donner accès à qui vous
+                    voulez. Ce système a été adopté pour éviter les problèmes de
+                    vol ou de grief, et permet d'avoir un vrai sentiment
+                    d'intégration au serveur.
+                </p>
+            </div>
+        </section>
+
+        <div
+            class="banner parallax"
+            style="background-image: url(&quot;static/img/bg3.webp&quot;)"
+        >
+            <div>
+                <h2>Besoin d'aide ?</h2>
+                <a
+                    href="https://www.discord.gg/PMNFaNG"
+                    target="_blank"
+                    aria-label="Notre Discord"
+                    ><span class="fab fa-discord"></span
+                ></a>
+                <a
+                    href="https://www.instagram.com/club_info_polytech_nancy/"
+                    target="_blank"
+                    aria-label="Notre Instagram"
+                    ><span class="fab fa-instagram"></span
+                ></a>
+                <a
+                    href="https://www.facebook.com/ClubInfoPolytechNancy"
+                    target="_blank"
+                    aria-label="Notre Facebook"
+                    ><span class="fab fa-facebook"></span
+                ></a>
+            </div>
         </div>
 
-        <div class="col">
-          <img alt="Skin OtarieSupreme" src="static/img/otariesupreme.png" height="100" width="100" loading="lazy" />
-          <h3>OtarieSupreme#5153</h3>
-          <p>Admin</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <section id="staff">
+            <h2>Le Staff</h2>
 
-  <button onclick="scrollToTop()" class="fixed" id="topBtn" title="Remonter"><span class="fas fa-arrow-up"></span></button>
+            <div class="container">
+                <div class="grid">
+                    <div class="col">
+                        <img
+                            alt="Skin Quatorze"
+                            src="static/img/quatorze.png"
+                            height="100"
+                            width="100"
+                            loading="lazy"
+                        />
+                        <h3>Quatorze#0290</h3>
+                        <p>Admin</p>
+                    </div>
 
-  <footer>
-    <a id="copyright" href="mentions-legales.html">mc.ci-polytech-nancy.fr - Mentions Légales</a>
-  </footer>
+                    <div class="col">
+                        <img
+                            alt="Skin Kingounours"
+                            src="static/img/kingounours.png"
+                            height="100"
+                            width="100"
+                            loading="lazy"
+                        />
+                        <h3>momosaurus#5894</h3>
+                        <p>Admin</p>
+                    </div>
 
-  <script src="static/script.js" async></script>
-</body>
+                    <div class="col">
+                        <img
+                            alt="Skin MrSpaar"
+                            src="static/img/mrspaar.png"
+                            height="100"
+                            width="100"
+                            loading="lazy"
+                        />
+                        <h3>MrSpaar#9229</h3>
+                        <p>Propriétaire</p>
+                    </div>
+
+                    <div class="col">
+                        <img
+                            alt="Skin OtarieSupreme"
+                            src="static/img/otariesupreme.png"
+                            height="100"
+                            width="100"
+                            loading="lazy"
+                        />
+                        <h3>OtarieSupreme#5153</h3>
+                        <p>Admin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button
+            onclick="scrollToTop()"
+            class="fixed"
+            id="topBtn"
+            title="Remonter"
+        >
+            <span class="fas fa-arrow-up"></span>
+        </button>
+
+        <footer>
+            <a id="copyright" href="mentions-legales.html"
+                >mc.ci-polytech-nancy.fr - Mentions Légales</a
+            >
+        </footer>
+
+        <script src="static/script.js" async></script>
+    </body>
 </html>

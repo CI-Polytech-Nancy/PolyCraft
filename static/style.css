@@ -2,257 +2,220 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 
 :root {
-  --small-space: 1.5vh;
-  --big-space: 6vh;
-  --grid-space: 2.5vh;
-  --container-space: 10vw;
+    --big-space: 8vh;
+    --medium-space: 6vh;
+    --small-space: 1vh;
+    --grid-space: 2.5vh;
+    --container-space: 10vw;
 }
 
 html {
-  scroll-behavior: smooth;
-  font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
+    font-family: "PT Sans", sans-serif;
 }
 
 body {
-  font-size: 1.25rem;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-
-  &::-webkit-scrollbar {
-    width: 7px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: white;
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-    background-color: #2980b9;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #3498db;
-    transition: background-color .2s;
-  }
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-
-h1, h2, h3, p, .topnav {
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h3, .topnav {
-  font-weight: 700;
-  text-transform: uppercase;
+h2,
+h3 {
+    font-weight: 700;
 }
 
 a {
-  color: white;
-  text-decoration: none;
-  transition: color .2s ease-in;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
 
-  &:hover {
-    color: #2980b9 !important;
-  }
+    &:hover {
+        color: #2980b9 !important;
+    }
 }
 
 .fixed {
-  z-index: 1;
-  position: fixed;
+    z-index: 1;
+    position: fixed;
 }
 
 button {
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background-color: transparent;
-  transition: color .2s;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: color 0.2s;
 
-  &:active {
-    transform: translateY(1px);
-    filter: saturate(150%);
-  }
-}
-
-
-.topnav {
-  top: 0;
-  width: 100%;
-  padding: 12px 0;
-  background-color: white;
-  box-shadow: 0 6px 13px -7px rgba(0, 0, 0, 0.20);
-
-  & a {
-    color: black;
-    font-size: 1.25rem;
-    padding: 0 1.25vw;
-    display: inline-block;
-  }
-}
-
-.banner {
-  color: white;
-  padding: 50px 0;
-
-  & div {
-    padding: 0 var(--container-space);
-  }
-
-  & h2 {
-    margin-bottom: var(--small-space);
-  }
-
-  & a {
-    font-size: 2rem;
-
-    &:not(:last-child){
-      margin-right: 1.5vw;
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
     }
-  }
 }
 
 .copyBtn:hover {
-  color: #2980b9;
+    color: #2980b9;
+}
+
+#topBtn {
+    opacity: 0;
+    bottom: 20px;
+    right: 30px;
+    padding: 15px 19px;
+    border-radius: 50%;
+    background-color: #3498db;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #2980b9;
+    }
+}
+
+.banner {
+    color: white;
+
+    & > div {
+        padding: 50px var(--container-space);
+    }
+
+    & h2 {
+        margin-bottom: var(--small-space);
+    }
+
+    & a {
+        font-size: 2rem;
+
+        &:not(:last-child) {
+            margin-right: 1.5vw;
+        }
+    }
 }
 
 .parallax {
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & > div {
+        backdrop-filter: blur(3px);
+    }
 }
 
 .header {
-  color: white;
-  padding: 222px 0 222px 0;
-  text-transform: uppercase;
+    color: white;
 
-  & h1 {
-    font-size: 3rem;
-  }
+    & > div {
+        padding: 222px 0 222px 0;
+    }
 
-  & p {
-    font-size: 2rem;
-  }
+    & h1 {
+        font-size: 3rem;
+    }
+
+    & p {
+        font-size: 2rem;
+    }
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 var(--container-space) var(--big-space) var(--container-space);
-  max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 var(--container-space) var(--big-space) var(--container-space);
+    max-width: min(1150px, 80vw);
 }
 
 section h2 {
-  font-size: 2rem;
-  margin: var(--big-space) 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: var(--big-space) 0 var(--medium-space) 0;
 
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 30vw;
-    height: 1px;
-    margin-top: var(--small-space);
-    left: calc(50% - 15vw);
-    background-color: black;
-  }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 1px;
+        margin-top: var(--small-space);
+        left: calc(50% - 50px);
+        background-color: black;
+    }
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 5%;
-  margin: calc(-1*var(--grid-space));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    margin: calc(-1 * var(--grid-space));
 
-  & .col {
-    margin: var(--grid-space);
-  }
+    & .col {
+        margin: var(--grid-space);
+    }
 }
-
 
 #rules {
-  & .icon {
-    font-size: 3.5rem;
-  }
+    & .icon {
+        font-size: 3.5rem;
+    }
 
-  & h3 {
-    margin: var(--small-space) 0;
-  }
+    & h3 {
+        margin: var(--small-space) 0;
+        text-transform: uppercase;
+    }
 
-  & .col {
-    width: 300px;
-  }
+    & .col {
+        width: 300px;
+    }
 }
 
+#description p {
+    text-align: justify;
+}
 
 #staff {
-  & .col {
-    transition: transform .1s ease-in;
-    width: 200px;
+    & .col {
+        transition: transform 0.1s ease-in;
+        width: 200px;
 
-    &:hover {
-      transform: scale(1.1,1.1);
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
     }
-  }
 
-  & h3 {
-    text-transform: initial;
-  }
+    & h3 {
+        text-transform: initial;
+    }
 }
-
 
 #mentions {
-  & a {
-    color: black;
-  }
+    & a {
+        color: black;
+    }
 
-  & h2 {
-    margin: var(--big-space) 0 var(--small-space) 0;
-  }
+    & h2 {
+        margin: var(--big-space) 0 var(--small-space) 0;
+    }
 
-  & p {
-    margin-top: var(--big-space);
-  }
+    & p {
+        margin-top: var(--big-space);
+    }
 }
-
-
-#error {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -ms-transform: translate(-45%, -50%);
-  transform: translate(-45%, -50%);
-
-  & + footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-}
-
-
-#topBtn {
-  opacity: 0;
-  bottom: 20px;
-  right: 30px;
-  padding: 15px 19px;
-  border-radius: 5%;
-  background-color: #3498db;
-  transition: background-color .1s ease-in;
-
-  &:hover {
-    background-color: #2980b9;
-  }
-}
-
 
 footer {
-  padding: 25px 0;
-  text-align: center;
-  background-color: #192a56;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #192a56;
 }
